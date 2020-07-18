@@ -37,22 +37,22 @@
     "lodash.isequal": "^4.5.0",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
-    "react-native-webview": "^10.3.1"
+    "react-native-webview": "^10.3.2"
   },
   "deprecated": false,
   "description": "A React Native component that uses a React Native WebView to provide a Leaflet map.",
   "devDependencies": {
-    "@babel/core": "^7.10.3",
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
-    "@babel/preset-react": "^7.10.1",
-    "@types/node": "^14.0.13",
-    "@types/react-leaflet": "^2.5.1",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@types/node": "^14.0.23",
+    "@types/react-leaflet": "^2.5.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "gulp": "4",
     "gulp-run": "^1.7.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-inliner": "^1.0.14",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.7"
   },
   "homepage": "https://github.com/reggie3/react-native-webview-leaflet#readme",
   "keywords": [
@@ -67,7 +67,7 @@
   "peerDependencies": {
     "react": "^16.13.1",
     "react-leaflet": "^2.7.0",
-    "react-native": "^0.62.2"
+    "react-native": "^0.63.1"
   },
   "repository": {
     "type": "git",
