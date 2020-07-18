@@ -9,7 +9,7 @@
   "version": "0.0.2",
   "homepage": "https://github.com/aristech/rn-leaflet/#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@OWNER"
   },
   "dependencies": {
     "react-native-fs": "^2.16.6",
