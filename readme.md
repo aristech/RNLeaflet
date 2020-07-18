@@ -1,29 +1,37 @@
-# RN Webview Leaflet by Aristech
+# React-Native Leaflet by Aristech
 
-### FIX Working on android without expo
+### FPackage working with react-native. Not tested on expo
 
-This fix requires the html file from android assets using react-native-fs
+This package requires the html file from android assets using react-native-fs
 
 ```
 ~/yourProject/android/app/src/main/assets/index.html
 ```
 
+or create an assets folder in your project dir
+add in react-native.config.js
+
 ```
- "devDependencies": {
-  ...
-    "RNLeaflet": "aristech/RNLeaflet"
-  }
+module.exports = {
+  project: {
+    ios: {},
+    android: {},
+  },
+  assets: ['./src/assets'],
+};
 ```
 
-copy or link it to that direction
+You can add assets with:
 
-### Everything else should be the same as the original package
-
-# React Native Webview Leaflet V5
+```
+react-native link
+```
 
 ## A Leaflet map component with no native code for React Native applications
 
 ### Why Use This Library
+
+### This is port from reggie3/react-native-webview-leaflet
 
 This component is useful if you want to display HTML elements on an interactive map. Since the elements are standard HTML items, they can be SVG's, emojis, text, images, etc.
 
@@ -33,25 +41,18 @@ Additionally, the elements can even be animated, updated, and changed as require
 
 You may not want to use this library if you'd rather use Google map tiles and data vice the tiles and map data from Open Street Maps.
 
-[![npm](https://img.shields.io/npm/v/react-native-webview-leaflet.svg)](https://www.npmjs.com/package/react-native-webview-leaflet)
-[![npm](https://img.shields.io/npm/dm/react-native-webview-leaflet.svg)](https://www.npmjs.com/package/react-native-webview-leaflet)
-[![npm](https://img.shields.io/npm/dt/react-native-webview-leaflet.svg)](https://www.npmjs.com/package/react-native-webview-leaflet)
-[![npm](https://img.shields.io/npm/l/react-native-webview-leaflet.svg)](https://github.com/react-native-component/react-native-webview-leaflet/blob/master/LICENSE)
-
-[![Alt text](https://img.youtube.com/vi/Jpo-Mg3BSVk/0.jpg)](https://www.youtube.com/watch?v=Jpo-Mg3BSVk)
-
 ## Installation
 
 Install using npm or yarn like this:
 
 ```javascript
-npm install --save react-native-webview-leaflet
+npm install --save rn-leaflet
 ```
 
 or
 
 ```javascript
-yarn add react-native-webview-leaflet
+yarn add rn-leaflet
 ```
 
 ## Usage
@@ -59,7 +60,7 @@ yarn add react-native-webview-leaflet
 and import like so
 
 ```javascript
-import WebViewLeaflet from "react-native-webview-leaflet";
+import WebViewLeaflet from "rn-leaflet";
 ```
 
 A typical example is shown below:
@@ -216,10 +217,6 @@ mapShapes={[
 Marker animations can be specified by setting the animation.type of the marker object to an AnimationType enum.
 Values for AnimationType can be found in the models.ts file in the WebViewLeaflet directory of this project.
 
-### Animation Information
-
-Animations are kept in the file [markers.css](https://github.com/reggie3/react-native-webview-leaflet/blob/master/web/markers.css) They are just keyframe animations like this:
-
 ```javascript
 @keyframes spin {
   50% {
@@ -235,58 +232,7 @@ Animations are kept in the file [markers.css](https://github.com/reggie3/react-n
 ```
 ## Changelog
 
-### 4.5.0
 
-* Removed Expo dependencies from the library and added polygons vectors (Thanks @gutoglup - https://github.com/gutoglup)
-
-### 4.3.1
-
-* Fixed issue with using expo-asset-utils that prevented this package from working with iOS apps in simulator
-
-### 4.2.0
-
-* Replace Expo dependency with expo-asset-utils
-* Fixed bug that caused map to not display when no ownPositionMarker was provided
-
-### 4.1.15
-
-* Keep own position marker from being clustered
-
-### 4.1.0
-
-* Added optional marker clustering using react-leaflet-markercluster
-* Update preview video in readme
-
-### 4.0.0
-
-* Fixed map centering, and map centering button (see issue #36(https://github.com/reggie3/react-native-webview-leaflet/issues/36) )
-#### BREAKING CHANGES:
-* Center map on own current location button defaults to not being shown
-* Center map on own current location button requires that a "ownPositionMarker" object be passed to the WebViewLeaflet component
-* WebViewLeaflet component requires a "centerPosition" prop for initial centering
-* Map tile Layers are now passed as props to the WebViewLeaflet component
-
-
-### 3.1.45
-
-* Works in production APK files.
-* Renders http images as map icons.
-
-### 3.0.0
-
-* Introduced user specified tile layers.
-
-### 2.0.0
-
-* Initial release of version 2 built on React-Leaflet
-
-### 5.0.0
-
-* Add TypeScript support
-* Switch to react-native-community/react-native-webview implementation
-* Add ability to draw shapes on the map (Leaflet vector layers)
-* Display map layer vector icons
-* Simplify event communication
 
 ## LICENSE
 
