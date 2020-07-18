@@ -8,8 +8,7 @@ This package requires the html file from android assets using react-native-fs
 ~/yourProject/android/app/src/main/assets/index.html
 ```
 
-or create an assets folder in your project dir
-add in react-native.config.js
+or create an assets folder in your project dir & add in react-native.config.js
 
 ```
 module.exports = {
