@@ -6,7 +6,7 @@
   "author": "aristech",
   "contributors": [],
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/aristech/rn-leaflet/#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
