@@ -20,7 +20,7 @@ export as namespace ReactNativeWebViewLeaflet;
 export {
   default as WebViewLeaflet,
   WebViewLeafletProps,
-} from "./WebViewLeaflet";
+} from "./src/WebViewLeaflet";
 export {
   LatLng,
   Point,
@@ -35,4 +35,4 @@ export {
   MapLayerType,
   MapShapeType,
   WebviewLeafletMessage,
-} from "./models";
+} from "./src/models";
